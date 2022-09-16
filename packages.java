@@ -24,22 +24,28 @@ public class packages {
         chs = sc.nextInt();
 
         do {
+            System.out.println("Enter 2 number:");
+            num1=sc.nextFloat();
+            num2=sc.nextFloat();
             switch (chs){
                 case 1:
-                    System.out.println(obj1.add(num1,num2);
+                    obj1.add(num1,num2);
                     break;
                 case 2:
-                    System.out.println(obj2.sub(num1,num2));
+                    obj2.sub(num1,num2);
                     break;
                 case 3:
-                    System.out.println(obj3.mul(num1,num2));
+                    obj3.mul(num1,num2);
                     break;
                 case 4:
-                    System.out.println(obj4.div(num1,num2));
+                    obj4.div(num1,num2);
                     break;
                 default:
                     System.out.println("Enter choice is wrong");
+                    break;
             }
+            System.out.println("Enter your choice: ");
+            chs = sc.nextInt();
         }while(chs!=5);
         System.out.println("!!!Thanks for visiting!!!");
     }
